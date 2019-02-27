@@ -1,0 +1,75 @@
+body {
+	display: flex;
+	height: 100px;
+	margin: 0;
+	background-color: 	#d97F50;
+}
+body *{
+	box-sizing: border-box;
+}
+.mdc-drawer-app-content {
+	flex: auto;
+	position: relative;
+}
+.mdc-top-app-bar{
+	background-color: black;
+}
+.main-content {
+	height: 100%;
+}
+
+/*.app-bar {
+	position: absolute;
+}*/
+.mdc-drawer__header{
+	/*background-color: #f4ebf2;*/
+	padding: 0;
+}
+.mdc-drawer{
+	margin-top: 64px;
+}
+.logo_img{
+	height: 100px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.mdc-dialog__surface{
+	width: 110px;
+}
+.mdc-text-field{
+	border-radius: 50px;
+	margin: 10px 20px 0;
+}
+.mdc-menu-surface {
+    top: 60px !important;
+    width: 160px;
+    right: 10px !important;
+    position: absolute;
+    left: auto !important;
+}
+.form_card{
+	width: 500px;
+	margin: 70px auto;
+	display: flex;
+	border: 1px solid gray;
+	max-width: 90%;
+}
+.mdc-card{
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.mdc-button:not(:disabled) {
+
+	margin: 10px 0px;
+}
+.img{
+	height: 36px;
+	margin-left:15px;
+}
+.app_bar_title{
+	font-size: 25px;
+	margin-left: 15px;
+}

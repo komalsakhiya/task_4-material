@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Material design task 4</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div class="mdc-drawer__header">
+		<header class="mdc-top-app-bar app-bar mdc-top-app-bar app-bar--dense" id="app-bar">
+			<div class="mdc-top-app-bar__row">
+				
+				<section class="mdc-top-app-bar__section 	mdc-top-app-bar__section--align-start">
+					<a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+					<img src="images/1.png" class="img">
+					<span class="app_bar_title">RAO INFOTECH</span>
+				</section>
+				<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+					<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download" id="pop_up">account_circle</a>
+					<div class="mdc-dialog firstbtn">
+						<div class="mdc-dialog__container">
+							<div class="mdc-dialog__surface">
+								<!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+								
+								<div class="mdc-card">
+									<center><h2 class="mdc-dialog__title" id="my-dialog-title">
+										SIGN IN
+									</h2></center>
+									<div class="mdc-dialog__content" id="my-dialog-content">
+										<div class="mdc-text-field my-text-1 mdc-text-field--outlined mdc-text-field--with-leading-icon">
+											<i class="material-icons mdc-text-field__icon">person</i>
+											<input type="text" id="my-text-field" class="mdc-text-field__input">
+											<div class="mdc-notched-outline mdc-notched-outline--upgraded"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch" ><label class="mdc-floating-label" for="text-field-shape-two" style="">UserName</label></div><div class="mdc-notched-outline__trailing"></div></div></div>
+
+
+											<div class="mdc-text-field my-text-2 mdc-text-field--outlined mdc-text-field--with-leading-icon">
+												<input type="password" id="password" class="mdc-text-field__input" >
+												<div class="mdc-notched-outline mdc-notched-outline--upgraded"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch" style=""><label class="mdc-floating-label" for="text-field-shape-two" style="">Password</label></div><div class="mdc-notched-outline__trailing"></div></div></div>
+												<div class="mdc-line-ripple"></div>
+											</div>
+
+											<footer class="mdc-dialog__actions">
+												<button type="button" class="mdc-button mdc-dialog__button canclebtn" >
+													<span class="mdc-button__label">Cancle</span>
+												</button>
+												<button type="button" class="mdc-button mdc-dialog__button " onclick="sankbar()" >
+													<span class="mdc-button__label">Submit</span>
+												</button>
+												<div class="mdc-snackbar  mdc-snackbar--stacked">
+													<div class="mdc-snackbar__surface">
+														<div class="mdc-snackbar__label"
+														role="status"
+														aria-live="polite">
+														Login Succsessfully.....
+													</div>
+													<div class="mdc-snackbar__actions">
+														<button type="button" class="mdc-button mdc-snackbar__action" id="close_pop_up"><i class="material-icons mdc-chip__icon mdc-chip__icon--leading">close</i></button>
+
+													</div>
+												</div>
+											</div>
+										</footer>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page" id="menubtn">more_vert</a>
+						<div class="mdc-menu mdc-menu-surface">
+							<ul class="mdc-list">
+								<li class="mdc-list-item" role="menuitem">
+									<span class="mdc-list-item__text">Back</span>
+								</li>
+								<li class="mdc-list-item" role="menuitem">
+									<span class="mdc-list-item__text">forward</span>
+								</li>
+								<li class="mdc-list-item" role="menuitem">
+									<span class="mdc-list-item__text">Reload</span>
+								</li>
+								<hr>
+								<li class="mdc-list-item" role="menuitem">
+									<span class="mdc-list-item__text">Save as</span>
+								</li>
+								<li class="mdc-list-item" role="menuitem">
+									<span class="mdc-list-item__text">Print</span>
+								</li>
+								<li class="mdc-list-item" role="menuitem">
+									<span class="mdc-list-item__text">Translate</span>
+								</li>
+
+							</ul>
+						</div>
+
+
+					</section>
+
+
+
+
+				</div>
+			</header>
+		</div>
+		<aside class="mdc-drawer mdc-drawer--dismissible">
+			<div class="mdc-drawer__content">
+				<img src="images/1.png" class="logo_img">
+				<div class="mdc-list">
+
+					<a class="mdc-list-item" href="#">
+						<span class="mdc-list-item__text">Home</span>
+					</a>
+					<a class="mdc-list-item" href="#">	
+						<span class="mdc-list-item__text">Registration</span>
+					</a>
+					<a class="mdc-list-item" href="#">
+						<span class="mdc-list-item__text">Login</span>
+					</a>
+
+				</div>
+			</div>
+		</aside>
+		<div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+			<main class="main-content" id="main-content">		
+				<div class="mdc-card form_card">
+					<center><h2>Registration Form</h2></center>
+					<div class="mdc-text-field my-text-3 mdc-text-field--outlined mdc-text-field--with-leading-icon">
+						<i class="material-icons mdc-text-field__icon">person</i>
+						<input type="text" id="my-text-field" class="mdc-text-field__input">
+						<div class="mdc-notched-outline mdc-notched-outline--upgraded"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch" ><label class="mdc-floating-label" for="text-field-shape-two">Name</label></div><div class="mdc-notched-outline__trailing"></div></div></div>
+						<div class="mdc-line-ripple"></div>
+
+
+						<div class="mdc-text-field my-text-4 mdc-text-field--outlined mdc-text-field--with-leading-icon">
+							<i class="material-icons mdc-text-field__icon">email</i>
+							<input type="email" id="my-text-field" class="mdc-text-field__input">
+							<div class="mdc-notched-outline mdc-notched-outline--upgraded"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch"><label class="mdc-floating-label" for="text-field-shape-two" >Email</label></div><div class="mdc-notched-outline__trailing"></div></div></div>
+							<div class="mdc-line-ripple"></div>
+
+
+
+							<div class="mdc-text-field my-text-5 mdc-text-field--outlined mdc-text-field--with-leading-icon">
+								<i class="material-icons mdc-text-field__icon">contact_phone</i>
+								<input type="text" id="my-text-field" class="mdc-text-field__input">
+								<div class="mdc-notched-outline mdc-notched-outline--upgraded"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch"><label class="mdc-floating-label" for="text-field-shape-two">Contact</label></div><div class="mdc-notched-outline__trailing"></div></div></div>
+
+								<div class="mdc-line-ripple"></div>
+
+								<div class="mdc-text-field my-text-6 mdc-text-field--outlined mdc-text-field--with-leading-icon">
+									<i class="material-icons mdc-text-field__icon">lock</i>
+									<input type="password" id="my-text-field" class="mdc-text-field__input">
+									<div class="mdc-notched-outline mdc-notched-outline--upgraded"><div class="mdc-notched-outline__leading"></div><div class="mdc-notched-outline__notch"><label class="mdc-floating-label" for="text-field-shape-two">Password</label></div><div class="mdc-notched-outline__trailing"></div></div></div>
+
+									<div class="mdc-line-ripple"></div>
+
+
+									<button class="mdc-button" onclick="sankbar1()">
+										<span class="mdc-button__label">Submit</span>
+									</button>
+									<div class="mdc-snackbar snacbar">
+										<div class="mdc-snackbar__surface">
+											<div class="mdc-snackbar__label"
+											role="status"
+											aria-live="polite">
+											Register Succsessfully.....
+										</div>
+										<div class="mdc-snackbar__actions">
+											<button type="button" class="mdc-button mdc-snackbar__action"><i class="material-icons mdc-chip__icon mdc-chip__icon--leading">close</i></button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</main>
+				</div>
+
+
+				<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+				<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
+				<script type="text/javascript" src="js/custom.js"></script>
+			</body>
+			</html>
